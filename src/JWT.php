@@ -131,7 +131,7 @@ class JWT
             throw new ExpiredException('Expired token');
         }
 
-        return $payload;
+        return [$header, $payload];
     }
 
     /**
